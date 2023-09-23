@@ -1,0 +1,6 @@
+# ignore providers folder
+.terraform/providers/*
+*.tfstate.*
+.DS_Store
+.terraform.lock.hcl
+*.tfvars
