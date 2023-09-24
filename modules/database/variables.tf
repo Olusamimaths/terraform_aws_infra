@@ -10,9 +10,9 @@ variable "vpc" {
   type = any
 }
 
-#variable "app_security_group" {
-#  type = any
-#}
+variable "app_security_group" {
+ type = any
+}
 
 variable "subnet" {
   type = object({

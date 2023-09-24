@@ -25,7 +25,7 @@ resource "aws_security_group" "database" {
     protocol = "tcp"
     from_port = 5432
     to_port = 5432
-    # security_groups = [var.app_security_group.id]
+    security_groups = [var.app_security_group.id]
     self = false
   }
 

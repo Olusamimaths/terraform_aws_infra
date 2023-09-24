@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"database","Source":"./modules/database","Dir":"modules/database"},{"Key":"network","Source":"./modules/network","Dir":"modules/network"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"database","Source":"./modules/database","Dir":"modules/database"},{"Key":"instance","Source":"./modules/instance","Dir":"modules/instance"},{"Key":"network","Source":"./modules/network","Dir":"modules/network"}]}

@@ -14,7 +14,7 @@ variable "project_name" {
   type        = string
 }
 
-variable "ssh-key" {
+variable "ssh_key" {
   description = "Public key to EC2 instance"
   type        = string
 }

@@ -55,5 +55,16 @@ module "database" {
   project_name = var.project_name
   vpc = module.network.vpc
   subnet = module.network.subnet
-  # app_security_group = module.instance.security_group
+  app_security_group = module.instance.security_group
+}
+
+module "instance" {
+  source = "./modules/instance"
+  namespace = var.namespace
+  project_name = var.project_name
+  vpc = module.network.vpc
+  ssh_key = var.ssh_key
+  alb = module.network.alb
+  subnet = module.network.subnet
+  db_config = module.database.db_config
 }
