@@ -48,3 +48,12 @@ module "network" {
   namespace = var.namespace
   project_name = var.project_name
 }
+
+module "database" {
+  source = "./modules/database"
+  namespace = var.namespace
+  project_name = var.project_name
+  vpc = module.network.vpc
+  subnet = module.network.subnet
+  # app_security_group = module.instance.security_group
+}
