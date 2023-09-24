@@ -1,6 +1,6 @@
 locals {
-  user_name = "user-${var.namespace}-${var.project_name}"
-  db_name   = "db-${var.namespace}-${var.project_name}"
+  user_name = "samterraform"
+  db_name   = "applicationdb"
 }
 
 resource "random_password" "password" {
@@ -43,7 +43,7 @@ resource "aws_db_instance" "database" {
   allocated_storage = 10
   allow_major_version_upgrade = true
   engine = "postgres"
-  engine_version = "15.4"
+  engine_version = "12.16"
   db_name = local.db_name
   username = local.user_name
   password = random_password.password.result
